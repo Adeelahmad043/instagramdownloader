@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Download facebook videos for free using Facebook Video Downloader">
+    <meta name="author" content="iCoder">
+    <title>INSTAGRAM Downloader</title>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = '/css/bootstrap.min.css') }}" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/static/Butten-css.css"> -->
+    <link href="{{ url_for('static', filename = '/Butten-css.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = '/downloded.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static', filename = '/cover.css') }}" rel="stylesheet"> -->
+    <link rel="canonical" href="https://getbootstrap.com/examples/cover/">
+    <!-- <link href="{{ url_for('static', filename = '/img-css.css') }}" rel="stylesheet"> -->
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        .textcolor{
+            color: black;
+        }
+
+        .srbox input,button{
+            width: 80%;
+            border: 3px solid #0400ff;
+            font-size: 20px;
+            padding: 10px;
+            background: transparent; 
+            
+            float: left;
+            margin-left: 15px;
+            margin-top: 10px;
+            border-radius: 25px;
+        }
+        .srbox button{
+            width: 15%;
+            background: white;
+            color: black;
+            border-radius: 4px;
+            font-family: "montserrat";
+            text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+        }
+        .Bhover:hover{
+            color: white;
+            background-color: #0400ff;
+        }
+        .active{
+            color: white;
+            background-color: #0400ff;
+        }
+
+        body{
+            background-color: white;
+            box-shadow: none;
+        }
+
+        footer{
+            border-top: 2px solid black;
+        }
+        .fotr{
+            float: left;
+            width: 25%;
+            padding-top: 10px;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = '/cover.css') }}" rel="stylesheet">
+</head>
+
+<body class="text-center textcolor" style="box-shadow: none;">
+    <div></div>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 65em;" >
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <!-- <h4 class="masthead-brand " >INSTAGRAM Downloader</h4> -->
+                <img src="{{ url_for('static', filename = 'img/Instagram Downloader.io_ Logo.png')}}" style="float: left;" >
+                <nav class="nav nav-masthead justify-content-center " style="padding-top: 40px;">
+                    <a class="nav-link active" style="color: black;" href="/">Home</a>
+                    <a class="nav-link " href="/about" style="color: black;" >Privacy Policy</a>
+                    <a class="nav-link " href="/terms-conditions" style="color: black;">Terms & Conditions</a>
+                </nav>
+            </div>
+        </header>
+        
+        <div  style="margin-top: 80px;" style="margin-bottom: 20px;" >
+            <div class="  p-4 border-0" style="float: left;" style="padding-left: 20px;">
+                <img src="{{ url_for('static', filename = 'img/Instagram Downloader_Welcome Bot.png')}}" class="card-img-top" alt="..." height="200 ">
+            </div>
+            <div style="text-align: left;" style="padding-left: 40%;">
+                <h2>Instagram Downloader</h2>
+                <p style="text-align: left;"><br>Hearty Welcome to Instagram Downloader!  This online tool allows users to download Instagram videos, photos, stories and IGTV videos. So don’t need to waste effort by installing fake apps or extensions. It’s a simple and easy to use tool that can be accessed from any device such as mobile, tablet and pc.</p>
+            </div>
+        </div>
+        
+        
+        
+        <main role="main" class="inner cover">
+            <div class="contaner">
+                <div >
+                    <a class="btn active Bhover" href="/">Photo Downloader</a>
+                    <a class="btn Bhover" href="/vide_download">Video Downloader</a>
+                    <a class="btn Bhover" href="/igtv_download">IGTV Downloader</a>
+                    <a class="btn Bhover" href="story">Story Downloader</a>
+                    <a class="btn Bhover" href="/dp_download">DP Downloader</a>
+                    <!-- <a class="btn btn-1" href="#">Highlights Downloader</a> -->
+                </div>
+            </div>
+            <div class="srbox">
+                <form method="POST">
+                    <input type="text" placeholder="Example: https://www.instagram.com/p/ " aria-label="default input example" name="url" >
+                    <button type="submit" class="Bhover">Search</button>
+                </form>
+            </div>
+
+            
+        </main>
+        <h2 class="mt-5 text-center">Instagram Downloader Features </h2>
+     <div class="mt-4" >
+        <div class="row">
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/No Registration_icon.png')}}" class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">No Need For Registration</h5>
+                      <p class="card-text">
+                        There is no need to register and install any additional app or extension to download Instagram videos, photos, stories, and IGTV. Instead, you can use Instagram Downloader for fastly downloads 
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/Free of Charge_icon.png')}}" class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">Access From Any Device</h5>
+                      <p class="card-text">
+                        This online tool can be accessed from any browser, any device such as android, ios and pc. Use Instagram Downloader for flexibility.
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/Access From Any Device_icon.png')}}" class="card-img-top" alt="..." height="300">
+                    <div>
+                      <h5 style="float: left;">Free of Charge</h5>
+                      <p class="card-text">
+                        This online tool does not charge a signal penny to its users for using its downloading service. Plus, it doesn’t apply any limitations on its users. 
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="mt-4" style="background-color: rgb(214, 209, 209);">
+        <h2 class=" text-center" style="padding-top: 8px;" >How to Download From Instagram </h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/step1.png')}}" class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">1.Copy Video, Photo, Story or IGTV URL</h5>
+                      <p class="card-text">
+                        There is no need to register and install any additional app or extension to download Instagram videos, photos, stories, and IGTV. Instead, you can use Instagram Downloader for fastly downloads 
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/step2.png')}}" class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">2.Paste the URL</h5>
+                      <p class="card-text">
+                        Paste the URL in the top search field on Instagram download, click on the below download button, and wait for a little while delivering your content.
+                      </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" p-3 border-0">
+                    <img src="{{ url_for('static', filename = 'img/step3.png')}}" class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">3.Click Download Button</h5>
+                      <p class="card-text">
+                        Quickly you will get your desired results. The results are excellent quality; you don’t need to worry about quality. Now, click the download button.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div >
+        <h2 style="padding-top: 20px;"><strong>FAQs Related to Instagram Downloader</strong></h2>
+        <h3 style="float: left;"><strong>What is an Instagram Downloader?</strong></h3>
+            <p style="text-align: left;"><br><br> Instagram Downloader is an online web tool that allows users to download everything from Instagram. This tool can be accessed from any device like mobile, tablet and pc. </p>
+            
+            <h3 style="float: left;"><strong>Is Instagram Downloader Safe?</strong></h3>
+            <p style="text-align: left;"><br><br> However, the Instagram downloader is not an official tool from Instagram, but it is 100% safe and secure as it does not require your account to download files from Instagram. Instagram downloader take care of your privacy. So, don’t worry! </p>
+            
+            <h3 style="float: left;"><strong>How Can I Download From Instagram?</strong></h3>
+            <p style="text-align: left;"><br><br> Downloading from Instagram is very simple. You just need to visit Instagramdownloader.io, copy the URL of the file you want to download from Instagram and paste in the input field, and hit enter. That’s all! </p>
+            
+            <h3 style="float: left;"><strong>Is Instagram Downloader Free?</strong></h3>
+            <p style="text-align: left;"><br><br> However, Instagramdownload.io provides a lot of interesting and useful features. But Instagram downloader also take care of its users. That’s why this tool does not charge a single penny to its users. </p>
+            
+            <h3 style="float: left;"><strong>What is the Best Instagram Downloader?</strong></h3>
+            <p style="text-align: left;"><br><br> We tested all the downloaders available on the internet but did not find any tool to compete with Instagramdownloader.io. Because we are providing useful features that other tools are not providing, and it’s free. </p>
+            
+            <h3 style="float: left;"><strong>Can I Download From Any Instagram User?</strong></h3>
+            <p style="text-align: left;"><br><br> The simple answer is “Yes”, you can download from any Instagram user.</p>
+
+    </div>
+    
+        <footer>
+            <div class="fotr">
+                <img src="{{ url_for('static', filename = 'img/Instagram Downloader.io_ Logo.png')}}" style="max-width: 80%;" >
+                <p style="font-size: 12px;">InstagramDownloader.io is created to help users to download from Instagram online. It’s easyto use, fast, and free. We do not host any content on our site. All content belongs to their respective owners.</p>
+            </div>
+            <div class="fotr" >
+                <h4>Usefull Tools </h4>
+                <p style="font-size: 12px;" > Instagram Photo Downloader <br>Instagram Video Downloader<br>Instagram Story Downloader<br>IGTV video Downloader<br>Instagram DP Downloader</p>
+                
+            </div>
+            <div class="fotr">
+                <h4>Legal </h4>
+                <p style="font-size: 12px;" >Privacy Policy <br> Terms and Conditions</p>
+            </div>
+            <div class="fotr">
+                <div>
+                    <h4>Contact</h4>
+                    <p style="font-size: 12px;">contact@instagramdownloader.io</p>
+                </div>
+                <div>
+                    <h4>Socials </h4>
+                    <img src="{{ url_for('static', filename = 'img/facebook_icon.png')}}" style="max-width: 23%;" >
+                    <img src="{{ url_for('static', filename = 'img/instagram_icon.png')}}" style="max-width: 30%;" >
+                    <img src="{{ url_for('static', filename = 'img/pinterest_icon.png')}}" style="max-width: 28%;" >
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

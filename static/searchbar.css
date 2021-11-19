@@ -1,0 +1,25 @@
+
+.contain{
+    margin-top: 680px;
+    margin: 0 130px;
+    margin-top: 20px;
+    
+ }  
+.glyphicon-search{
+    font-size: 20px;
+}
+.btn-default{
+    background: orange;
+    width: 100px;
+    padding: 12.5px;
+}
+
+.main-contain{
+    margin: 0 70px;
+}
+.btn-success{
+    color: black;
+}
+.input-group{
+    box-shadow: 0 0 20px #bac3c3;
+}
